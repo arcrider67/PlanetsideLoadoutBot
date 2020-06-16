@@ -1,0 +1,15 @@
+{
+  "name": "planetside2loadoutcheckbot",
+  "version": "1.0.0",
+  "description": "First bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ArcRider",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0"
+  }
+}
