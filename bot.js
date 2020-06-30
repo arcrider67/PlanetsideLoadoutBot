@@ -12,20 +12,25 @@ const ItemGetParams = "&c:limit=2000"
 
 
 //startup 
+
+//log in as this process
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
-
 client.login(process.env.DISCORD_TOKEN);
 
-
+//gather available commands
 client.commands = new Discord.Collection();
 const botCommands = require('./commands');
 
 Object.keys(botCommands).map(key => {
   client.commands.set(botCommands[key].name, botCommands[key]);
 });
+
+//list gathered commands in client
 console.log(client.commands);
+
+
 
 client.on('message', msg => {
 

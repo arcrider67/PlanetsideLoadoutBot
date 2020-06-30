@@ -27,10 +27,15 @@ module.exports = {
             .then(function(data){
                 console.log(data);
             })
+
+            //have the command return the item list
+            //break this function down further, not into commands but functions
+
         })
         .catch(function(error) {
         // This is where you run code if the server returns any errors
         });
         console.log("Command Complete");
     },
-  };
+
+};
