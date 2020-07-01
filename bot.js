@@ -27,6 +27,14 @@ Object.keys(botCommands).map(key => {
   client.commands.set(botCommands[key].name, botCommands[key]);
 });
 
+//gather LoadoutManager commands
+const loadCommands = require('./commands/LoadoutManager');
+
+Object.keys(loadCommands).map(key => {
+  client.commands.set(loadCommands[key].name, loadCommands[key]);
+});
+
+
 //list gathered commands in client
 console.log(client.commands);
 
@@ -37,7 +45,7 @@ client.on('message', msg => {
     if(msg.author.id == process.env.CLIENT_ID) return;
 
     const args = msg.content.split(/ +/);
-    const command = args.shift().toLowerCase();
+    const command = args.shift();
     console.info(`Called command: ${command}`);
   
     if (!client.commands.has(command)){
@@ -54,38 +62,3 @@ client.on('message', msg => {
     }
 
 });
-
-/*
-//when message detected in bot's channel
-client.on('message', msg => {
-
-    if (msg.content === 'ping') {
-        msg.reply('pong');
-    
-        //check if the command is valid and it was not sent from this bot
-    } else if (msg.content.includes("!check") && msg.author.id != process.env.CLIENT_ID){
-        //msg.reply("check what?");
-        var url = PS2endpoint + CharIDSearch;
-    
-        fetch(url) // Call the fetch function passing the url of the API as a parameter
-        .then((resp) => resp.json())
-    
-        .then(function(data) {
-            // Your code for handling the data you get from the API
-            console.log(data);
-            var charID = data["character_list"][0]["character_id"];
-            console.log(charID);
-            url =   
-        })
-        .catch(function(error) {
-        // This is where you run code if the server returns any errors
-        });
-    
-    
-    }
-
-    /*
-    */
-
-
-

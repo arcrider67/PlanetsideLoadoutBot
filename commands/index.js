@@ -1,5 +1,7 @@
 module.exports = {
     Ping: require('./ping'),
-    Check: require('./check')
+    Check: require('./check'),
+    Help: require('./help'),
+
 
   };

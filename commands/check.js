@@ -35,7 +35,7 @@ module.exports = {
         .catch(function(error) {
         // This is where you run code if the server returns any errors
         });
-        console.log("Command Complete");
+        
     },
 
 };

@@ -1,8 +1,8 @@
 module.exports = {
     name: '!newLoadout',
-    description: 'List all available bot commands and their descriptions',
+    description: 'adds a new loadout to the outfit that is calling the command',
     execute(msg, args){
-        
+
 
 
 
