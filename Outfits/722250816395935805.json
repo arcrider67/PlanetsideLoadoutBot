@@ -1,1 +1,25 @@
-{"outfitname":"ArcRider's bot testing server","loadouts":{}}
+{"outfitname":"ArcRider's bot testing server",
+    "loadouts":{
+        "Combat Medic":
+            [
+            ["Cycler TRV", "7124", "TAR", "7128","TORQ-9", "7129"],
+            ["AMR-66", "25008", "Dragoon", "6004216"],
+            ["AE Medical Applicator 6", "803792"],
+            ["Nano-Regen Device 6", "8885"],
+            ["Shield Recharge field", "47"],
+            ["Grenade Bandolier 3", "75550"],
+            ["Revive grenade", "884"],
+            ["C-4", "432"],
+            ["Ordienance Dampener","6009058"]
+        ]
+        ,
+        "Heavy Assault":{},
+        "Infiltrator":{},
+        "Light-Assault":{},
+        "Engineer":{},
+        "Max":{}
+
+
+
+    }
+}
